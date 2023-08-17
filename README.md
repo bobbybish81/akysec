@@ -1,6 +1,6 @@
 # Akysec
 
-<img src='./src/assets/logo-white' width='200'/>
+<img src='./src/assets/akysec.png' width='800'/>
 
 website: https://www.akysec.com
 
