@@ -1,55 +1,73 @@
-.mobile-contact-section,
-.desktop-contact-section {
-  display: block;
+.contact-section {
   background-color: #fff;
   margin: 0 auto;
-}
-
-.desktop-contact-section {
-  display: none;
-}
-
-.mobile-contact-heading {
-  margin: 0 1.5rem;
-  padding: 2rem 1.5rem;
-  font-weight: 700;
-  color: #4C102D;
-  text-align: center;
-  border-bottom: 1px solid #eae9e9;
 }
 
 .contact-article {
   color: #4C102D;
 }
 
-.contact-article div {
+.contact-text {
   padding: 1.5rem;
   margin: 1.5rem 0 0;
+  border-bottom: 1px solid #eae9e9;
 }
 
-.contact-article div h2,
-.contact-article div h4 {
+.contact-text h2,
+.contact-text h4 {
   margin-bottom: 1rem;
   font-weight: 550;
 }
 
-@media screen and (min-width: 948px) {
-  .mobile-contact-section {
-    display: none;
-  }
+.contact-info {
+  padding: 1.5rem;
+  margin: 0;
+}
 
-  .desktop-contact-section {
-    display: block;
-  }
+.contact-info h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info h5 {
+  margin: 1rem 0;
+}
+
+.contact {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.contact a {
+  color: #4C102D;
+}
+
+.contact a:hover {
+  color: #927256;
+}
+
+.react-icon {
+  font-size: 1.1rem;
+  display: flex;
+  margin: 0 0.5rem 0 0;
+}
+
+@media screen and (min-width: 948px) {
 
   .contact-article {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .contact-article div {
+  .contact-text,
+  .contact-info {
     padding: 3rem;
     margin: 0;
+  }
+
+  .react-icon {
+    font-size: 1.5rem;
   }
 
 }

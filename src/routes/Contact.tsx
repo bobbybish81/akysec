@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from 'react';
-import { MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineAlternateEmail } from 'react-icons/md';
+import { BsLinkedin, BsFillTelephoneFill } from 'react-icons/bs';
 import TransitionEffect from '../components/TransitionEffect';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -17,37 +18,29 @@ const Contact = () => {
     <main>
       <TransitionEffect/>
       <Header/>
-      <section className='mobile-contact-section'>
-        <Banner page={'contact'}/>
-        <article className='contact-article'>
-          {/* <div>
-            <h2>Contact Akysec today</h2>
-            <p>Send us a message or ask a question using this form. We will get back to you as soon as possible</p>
-            <h5>Akysec Customer Services</h5>
-            <br></br>
-          </div> */}
-          {/* <ContactForm/> */}
-          <ContactText/>
-        </article>
-      </section>
-      <section className='desktop-contact-section'>
+      <section className='contact-section'>
         <Banner page={'contact'}/>  
         <article className='contact-article'>
-          {/* <ContactForm/> */}
           <ContactText/>
-          <div>
-            <h4>Get in touch today</h4>
-            <p>Expect a reply within 24 hours</p> 
-
-            <h4>Wherever you are</h4>
-            <p>Our clients are in the UK, Europe and the US.</p>
-            <p>We are based in Stockholm, Sweden</p>
-
-            <h4>Send us a message​​</h4>
-            <div className='email-btn'>
-              <MdOutlineEmail className='email-logo'/>
-              <a className='mailtoui' href='mailto:aicha@akysec.com'>aicha@akysec.com</a>
+          <div className='contact-info'>
+            <h2>Get in touch today</h2>
+            <p>We are dedicated to safeguarding your information and ensuring your business remains resilient against persistent threats. If you're ready to enhance your security, don't hesitate to reach out.</p>
+            <hr/>
+            <h5>Contact Us</h5>
+            <div className='contact'>
+              <MdOutlineAlternateEmail className='react-icon'/>
+              <a href='mailto:aicha@akysec.com'>aicha@akysec.com</a>
             </div>
+            <div className='contact'>
+              <BsFillTelephoneFill className='react-icon'/>
+              <a href='tel:+46736411700'>+46 73 641 1700</a>
+            </div>
+            <div className='contact'>
+              <BsLinkedin className='react-icon'/>
+              <a href='https://www.linkedin.com/in/aicha-kermoury-bish-cism-msc-79aa1464'>Aicha Kermoury Bish, CISM, MSc</a>
+            </div>
+            <hr/>
+            <p className='mt-4'>Our clients are located in Europe and the UK. We are based in Stockholm, Sweden</p>
           </div>
         </article>
       </section>

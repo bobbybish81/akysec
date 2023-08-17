@@ -29,10 +29,6 @@
   margin-bottom: 1.5rem;
 }
 
-.services-article p {
-  text-align: center;
-}
-
 @media screen and (min-width: 948px) {
 
   .services-section {
@@ -60,15 +56,9 @@
   }
 
   .services-article h4 {
-    /* height: 20%; */
     text-align: left;
     justify-content: flex-start;
     font-size: 1.4rem;
-    /* margin: 0; */
-  }
-
-  .services-article p {
-    text-align: left;
   }
 
 }
