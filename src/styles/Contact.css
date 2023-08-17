@@ -1,0 +1,55 @@
+.mobile-contact-section,
+.desktop-contact-section {
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.desktop-contact-section {
+  display: none;
+}
+
+.mobile-contact-heading {
+  margin: 0 1.5rem;
+  padding: 2rem 1.5rem;
+  font-weight: 700;
+  color: #4C102D;
+  text-align: center;
+  border-bottom: 1px solid #eae9e9;
+}
+
+.contact-article {
+  color: #4C102D;
+}
+
+.contact-article div {
+  padding: 1.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.contact-article div h2,
+.contact-article div h4 {
+  margin-bottom: 1rem;
+  font-weight: 550;
+}
+
+@media screen and (min-width: 948px) {
+  .mobile-contact-section {
+    display: none;
+  }
+
+  .desktop-contact-section {
+    display: block;
+  }
+
+  .contact-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-article div {
+    padding: 3rem;
+    margin: 0;
+  }
+
+}

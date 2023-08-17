@@ -1,37 +1,111 @@
-/* desktop-header styles */
-
-.desktop-header {
+header {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  display: none;
-  z-index: 99;
-}
-
-/* mobile-header styles */
-
-.mobile-header {
-  width: 100%;
-  height: 5.5rem;
   position: sticky;
   top: 0;
-  transition: 0.5s;
-  display: flex;
-  z-index: 99;
+  left: 0;
+  padding: 1rem 0.5rem;
+  background-color: #FAEED3;
+  border-bottom: 0.5px solid #4C102D;
+  z-index: 1;
 }
 
+.header-logo {
+  height: 2.75rem;
+  width: 9.75rem
+}
+
+.desktop-nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.desktop-nav-links li {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.desktop-nav-links li:hover {
+  color: #4C102D;
+}
+
+.link-icon {
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0;
+}
+
+.active-link li {
+  color: #4C102D;
+}
+
+.non-active-link li {
+  color: #927256;
+}
+
+.menu-closebtn,
+.menu-openbtn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  color: #4C102D;
+}
+
+.mobile-menu {
+  width: 100%;
+  position: absolute;
+  top: 5.75rem;
+  left: 0;
+  background-color: #FAEED3;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.mobile-navlink {
+  color: #4C102D;
+  display: flex;
+  margin-bottom: 1.75rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+
+.mobile-navlink li {
+  text-decoration: none;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+}
 
 @media screen and (min-width: 948px) {
-
-  .desktop-header {
-    display: block;
+  header {
+    height: 6rem;
+    padding: 0.85rem 4rem;
   }
 
-  .mobile-header {
+  .header-logo {
+    height: 3.5rem;
+    width: 12.5rem
+  }
+
+  .menu-closebtn, .menu-openbtn {
     display: none;
   }
-  
-}
 
+}

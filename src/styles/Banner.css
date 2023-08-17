@@ -1,0 +1,86 @@
+.banner-section {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    background-image: url('../assets/banner.webp');
+    background-size: 100% 100%;
+    animation: fadein 3s;
+  }
+  
+  .banner-section div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    color: #FFF;
+    background: linear-gradient(-45deg, transparent 50%, #4C102D 50%);
+  }
+  
+  /* .services-h1, .services-h4, .contact-h1 {
+    height: 100px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    animation: fontsize 2s ease-in-out;
+  } */
+
+  .services-h1, .services-h4, .contact-h1 {
+    height: fit-content;
+    text-align: left;
+    width: 50%;
+    display: block;
+    margin: 0 0 0 1rem;
+    font-size: 1.45rem;
+    animation: fontsize 2s ease-in-out;
+  }
+
+  .services-h4 {
+    font-size: 1rem;
+  }
+  
+  @media screen and (min-width: 948px) {
+
+    .banner-section {
+      height: 200px;
+    }
+  
+    .services-h1, .services-h4, .contact-h1 {
+      font-size: 2.5rem;
+      margin: 0 0 0 5rem;
+    }
+    
+    .services-h1, .contact-h1 {
+      width: 50%;
+      font-size: 2.5rem;
+    }
+
+    .services-h4 {
+      font-size: 1.75rem;
+    }
+  
+    .contact-h1 {
+      margin: 0 0 0 3rem;
+    }
+  
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes fontsize {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

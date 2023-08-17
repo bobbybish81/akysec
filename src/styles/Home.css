@@ -1,0 +1,171 @@
+.intro-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 1rem 0;
+  background-image: url('../assets/intro-bg-mobile.webp');
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: #0000004D;
+  color: #FFF;
+}
+
+.intro-section h1, .intro-article p {
+  text-align: center;
+  font-size: 1.95rem;
+  font-weight: 700; 
+  margin-bottom: 3rem;
+  text-shadow: -0.5px 0 #000, 0 0.5px #000, 0.5px 0 #000, 0 -0.5px #000;
+}
+
+.intro-article p {
+  font-size: 1.25rem;
+}
+
+.questions-section {
+  color: #4C102D;
+  padding: 2rem 1rem 1rem;
+}
+
+.questions-article {
+  margin-bottom: 1rem;
+}
+
+.questions-article h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+.questions-article p {
+  font-size: 0.85rem;
+}
+
+.about-section {
+  background-color: #fcf8f8;
+  color: #4C102D;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-section-div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #d0cfcf;
+}
+
+.about-article p, .pricing-article p {
+  font-size: 0.85rem;
+}
+
+.about-article:nth-of-type(1) {
+  margin-bottom: 2rem;
+}
+
+.about-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  height: 3.5rem;
+}
+
+.pricing-article p a {
+  color: #4C102D;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 948px) {
+  .intro-section {
+    padding: 6rem;
+    background-image: url('../assets/intro-bg.webp');
+    animation: fadein 3s;
+  }
+
+  .intro-article {
+    width: 100%;
+  }
+
+  .intro-article h1, .intro-article p  {
+    width: 50%;
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: -0.5px 0 #000, 0 0.5px #000, 0.5px 0 #000, 0 -0.5px #000;
+  }
+
+  .intro-article p {
+    width: 35%;
+    font-size: 1.5rem;
+  }
+
+  .questions-section {
+    padding: 4rem 6rem 2rem;
+  }
+
+  .questions-article {
+    margin-bottom: 3rem;
+  }
+
+  .questions-article h2 {
+    margin: 0 0 1rem 0;
+  }
+
+  .questions-article p {
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    padding: 4rem 6rem;
+  }
+
+  .about-section h1 {
+    margin-bottom: 3.5rem;
+  }
+
+  .about-section-div {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-article p, .pricing-article p {
+    font-size: 1.1rem;
+  }
+
+  .about-article:nth-of-type(1) {
+    margin: 0;
+    padding-right: 2rem;
+  }
+
+  .about-article:nth-of-type(2) {
+    padding-left: 2rem;
+  }
+
+  .about-img-div {
+    height: 6rem;
+    justify-content: flex-start;
+  }
+
+  .about-img {
+    height: 5.5rem;
+    margin-right: 3rem;
+  }
+
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
