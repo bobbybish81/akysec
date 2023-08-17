@@ -69,11 +69,6 @@ const Services = ({ servicesContent } : servicesContentProps) => {
           <p>{servicesContent.Information_security_management_system[0].children[0].text}</p>
         </article>
         <article className='services-article'>
-          {React.createElement(serviceLogos[6], { className: 'service-icon' })}
-          <h4>Information classification</h4>
-          <p>{servicesContent.Information_classification[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
           {React.createElement(serviceLogos[7], { className: 'service-icon' })}
           <h4>Compliance & regulatory requirements</h4>
           <p>{servicesContent.Compliance_and_regulatory_requirements[0].children[0].text}</p>

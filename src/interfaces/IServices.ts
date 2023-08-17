@@ -35,7 +35,6 @@ interface IServices {
   Governance: IService[],
   Security_awareness_and_training: IService[],
   Information_security_management_system: IService[],
-  Information_classification: IService[],
   Compliance_and_regulatory_requirements: IService[],
   Third_party_risk_management: IService[],
   DevSecOps: IService[],
