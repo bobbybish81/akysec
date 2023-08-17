@@ -74,7 +74,7 @@ const Home = ({ homeContent } : homeContentProps) => {
           {homeContent.Pricing?.map((text, index) => 
             <p key={index}>{text}</p>
           )}
-          <p>To set up a free consultation to discuss your business requirements, go to our <Link to='/contact'>Contact</Link> page and complete the form.</p>
+          <p>To set up a free consultation to discuss your business requirements, go to our <Link to='/contact'>Contact</Link> page for further details.</p>
         </article>
       </section>
       <Footer/>
