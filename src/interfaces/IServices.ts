@@ -50,4 +50,10 @@ interface IServices {
   _id: string,
 }
 
+// interface IServices {
+//   [key: string]: {
+//     children: Array<{ text: string }>;
+//   };
+// }
+
 export default IServices

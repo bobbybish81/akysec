@@ -9,7 +9,7 @@ const Footer = () => {
       <div className='footer-div'>
         <img className='footer-img'
             src={require('../assets/logo-white.webp')} alt='logo to appear'/>
-        <p className='footer-img-text'>An Information security company offering consulting and implementation services</p>
+        <p className='footer-img-text'>An Sweden based information security company offering consulting  services</p>
       </div>
       <div className='footer-div'>
         <a href='https://akysec.com'><p className='footer-text'>www.akysec.com</p></a>

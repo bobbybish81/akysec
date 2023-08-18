@@ -8,18 +8,17 @@ import { IoWarning, IoVideocam, IoBriefcase, IoServer, IoSchool, IoStatsChart, I
 import '../styles/Services.css';
 
 const serviceLogos = [
+  IoBriefcase,
+  IoCloud,
+  IoShieldHalf,
+  IoFolder,
+  IoServer,
+  IoCard,
+  IoStatsChart,
   IoWarning,
   IoVideocam,
-  IoBriefcase,
-  IoServer,
   IoSchool,
-  IoStatsChart,
-  IoDocumentText,
-  IoShieldHalf,
   IoColorFilter,
-  IoFolder,
-  IoCloud,
-  IoCard
 ];
 
 interface servicesContentProps {
@@ -32,67 +31,42 @@ const Services = ({ servicesContent } : servicesContentProps) => {
     window.scrollTo(0,0)
   })
 
+  const iconStyles = ['#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c']
+
+  const services = Object.keys(servicesContent)
+    .filter(key => !key
+      .startsWith('_') && key !== 'image' && key !== 'zServices')
+      .sort();
+
+  const servicesText = [
+    servicesContent.CISO_as_a_Service[0].children[0].text,
+    servicesContent.Cloud_security[0].children[0].text,
+    servicesContent.Compliance_and_regulatory_requirements[0].children[0].text,
+    servicesContent.DevSecOps[0].children[0].text,
+    servicesContent.Governance[0].children[0].text,
+    servicesContent.Identity_and_access_management[0].children[0].text,
+    servicesContent.Information_security_management_system[0].children[0].text,
+    servicesContent.Risk_management[0].children[0].text,
+    servicesContent.Security_audits[0].children[0].text,
+    servicesContent.Security_awareness_and_training[0].children[0].text,
+    servicesContent.Third_party_risk_management[0].children[0].text,
+  ]
+
   return (
     <main>
       <Header/>
       <TransitionEffect/>
       <Banner page={'services'}/>
       <section className='services-section'>
+        {services.map((service, index) => 
         <article className='services-article'>
-          {React.createElement(serviceLogos[0], { className: 'service-icon' })}
-          <h4>Risk management</h4>
-          <p>{servicesContent.Risk_management[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[1], { className: 'service-icon' })}
-          <h4>Security audits</h4>
-          <p>{servicesContent.Security_audits[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[2], { className: 'service-icon' })}
-          <h4>CISO as a service</h4>
-          <p>{servicesContent.CISO_as_a_Service[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[3], { className: 'service-icon' })}
-          <h4>Governance</h4>
-          <p>{servicesContent.Governance[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[4], { className: 'service-icon' })}
-          <h4>Security awareness & training</h4>
-          <p>{servicesContent.Security_awareness_and_training[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[5], { className: 'service-icon' })}
-          <h4>Information security management system</h4>
-          <p>{servicesContent.Information_security_management_system[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[7], { className: 'service-icon' })}
-          <h4>Compliance & regulatory requirements</h4>
-          <p>{servicesContent.Compliance_and_regulatory_requirements[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[8], { className: 'service-icon' })}
-          <h4>Third party risk management</h4>
-          <p>{servicesContent.Third_party_risk_management[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[9], { className: 'service-icon' })}
-          <h4>DevSecOps</h4>
-          <p>{servicesContent.DevSecOps[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[10], { className: 'service-icon' })}
-          <h4>Cloud security</h4>
-          <p>{servicesContent.Cloud_security[0].children[0].text}</p>
-        </article>
-        <article className='services-article'>
-          {React.createElement(serviceLogos[11], { className: 'service-icon' })}
-          <h4>Identity and access management</h4>
-          <p>{servicesContent.Identity_and_access_management[0].children[0].text}</p>
-        </article>
+          <div className='service-icon-container'>
+            {React.createElement(serviceLogos[index], { className: 'service-icon', style: { color: iconStyles[index] } })}
+            {/* {React.createElement(serviceLogos[index], { className: 'service-icon', style: { color: '#ad2366' } })} */}
+          </div>
+          <h4>{service.replaceAll('_', ' ')}</h4>
+          <p>{servicesText[index]}</p>
+        </article>)}
       </section>
       <Footer/>
     </main>
