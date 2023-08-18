@@ -45,12 +45,15 @@ const Home = ({ homeContent } : homeContentProps) => {
             <div className='about-img-div'>
               <img
                   className='about-img'
-                  src={require('../assets/certifications/PECB.webp')} alt='logo to appear'/>
+                  src={require('../assets/certifications/PECB_1.webp')} alt='logo to appear'/>
               <img
                   className='about-img'
-                  src={require('../assets/certifications/CSA.webp')} alt='logo to appear'/>
+                  src={require('../assets/certifications/PECB_2.webp')} alt='logo to appear'/>
               <img
                   className='about-img'
+                  src={require('../assets/certifications/CCSK.webp')} alt='logo to appear'/>
+              <img
+                  className='about-img' style={{margin: '0'}}
                   src={require('../assets/certifications/CISM.webp')} alt='logo to appear'/>
             </div>
             {homeContent.About_Akysec?.map((text, index) => 
