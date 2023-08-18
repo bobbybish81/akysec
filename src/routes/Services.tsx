@@ -4,7 +4,7 @@ import IServices from '../interfaces/IServices';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
-import { IoWarning, IoVideocam, IoBriefcase, IoServer, IoSchool, IoStatsChart, IoDocumentText, IoShieldHalf, IoColorFilter, IoFolder, IoCloud, IoCard } from 'react-icons/io5';
+import { IoWarning, IoVideocam, IoBriefcase, IoServer, IoSchool, IoStatsChart, IoShieldHalf, IoColorFilter, IoFolder, IoCloud, IoCard } from 'react-icons/io5';
 import '../styles/Services.css';
 
 const serviceLogos = [
