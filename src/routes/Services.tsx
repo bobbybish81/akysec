@@ -62,7 +62,6 @@ const Services = ({ servicesContent } : servicesContentProps) => {
         <article className='services-article'>
           <div className='service-icon-container'>
             {React.createElement(serviceLogos[index], { className: 'service-icon', style: { color: iconStyles[index] } })}
-            {/* {React.createElement(serviceLogos[index], { className: 'service-icon', style: { color: '#ad2366' } })} */}
           </div>
           <h4>{service.replaceAll('_', ' ')}</h4>
           <p>{servicesText[index]}</p>

@@ -14,6 +14,27 @@ header {
   width: 9.75rem
 }
 
+.location {
+  margin-left: 1rem;
+  padding: 0;
+  position: relative;
+}
+
+.globe-icon {
+  font-size: 1.5rem;
+  color: #4C102D;
+  cursor: pointer;
+}
+
+.location-text {
+  color: #4C102D;
+  width: 6rem;
+  font-size: 0.5rem;
+  position: absolute;
+  top: 1.75rem;
+  left: -1.8rem;
+}
+
 .desktop-nav-links {
   width: 50%;
   display: flex;
@@ -106,6 +127,17 @@ header {
 
   .menu-closebtn, .menu-openbtn {
     display: none;
+  }
+
+  .location {
+    margin-left: 2rem;
+  }
+
+  .location-text {
+    font-size: 0.8rem;
+    width: 15rem;
+    left: 1.75rem;
+    top: 0.25rem;
   }
 
 }

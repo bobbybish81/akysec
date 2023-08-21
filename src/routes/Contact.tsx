@@ -40,7 +40,7 @@ const Contact = () => {
               <a href='https://www.linkedin.com/in/aicha-kermoury-bish-cism-msc-79aa1464'>Aicha Kermoury Bish, CISM, MSc</a>
             </div>
             <hr/>
-            <p className='mt-4'>Our clients are located in Europe and the UK. We are based in Stockholm, Sweden</p>
+            <p className='mt-4'>Our clients are located in Sweden and the United Kingdom. We are based in Stockholm, Sweden.</p>
           </div>
         </article>
       </section>

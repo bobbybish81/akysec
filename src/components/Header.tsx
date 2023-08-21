@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaHome, FaBriefcase, FaEnvelope } from 'react-icons/fa';
-import { IoClose, IoMenu } from 'react-icons/io5';
+import { IoClose, IoMenu, IoGlobeOutline } from 'react-icons/io5';
 import '../styles/Header.css';
 
 
 const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
+  const [displayLocation, setDisplayLocation] = useState(false);
 
   const menuToggle = () => {
     openMenu === true ? setOpenMenu(false) : setOpenMenu(true);
@@ -45,6 +46,14 @@ const Header = () => {
             <img className='header-logo'
               src={require('../assets/logo.webp')} alt='logo to appear'/>
           </Link>
+          <div className='location'>
+            <IoGlobeOutline
+              className='globe-icon'
+              onClick={()=> setDisplayLocation(!displayLocation)}
+              onMouseEnter={() => setDisplayLocation(true)}
+              onMouseLeave={() => setDisplayLocation(false)} />
+            {displayLocation ? <p className='location-text'>Stockholm, Sweden</p> : null}
+          </div>
           {openMenu ? <IoClose className='menu-closebtn' onClick={menuToggle}/> :
           <IoMenu className='menu-openbtn' onClick={menuToggle}/>}
           <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
