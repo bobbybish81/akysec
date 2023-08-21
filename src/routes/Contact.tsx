@@ -29,7 +29,7 @@ const Contact = () => {
             <h5>Contact Us</h5>
             <div className='contact'>
               <MdOutlineAlternateEmail className='react-icon'/>
-              <a href='mailto:aicha@akysec.com'>aicha@akysec.com</a>
+              <a href='mailto:info@akysec.com'>info@akysec.com</a>
             </div>
             <div className='contact'>
               <BsFillTelephoneFill className='react-icon'/>
@@ -37,7 +37,10 @@ const Contact = () => {
             </div>
             <div className='contact'>
               <BsLinkedin className='react-icon'/>
-              <a href='https://www.linkedin.com/in/aicha-kermoury-bish-cism-msc-79aa1464'>Aicha Kermoury Bish, CISM, MSc</a>
+              <a
+                href='https://www.linkedin.com/company/akysec'
+                target='_blank'
+                rel='noreferrer'>Follow us on Linkedin</a>
             </div>
             <hr/>
             <h6 className='mt-4'>Sweden • United Kingdom • Europe</h6>

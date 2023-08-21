@@ -31,7 +31,7 @@ const Services = ({ servicesContent } : servicesContentProps) => {
     window.scrollTo(0,0)
   })
 
-  const iconStyles = ['#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c', '#0F4BA0', '#7d531c']
+  const iconStyles = ['#927256', '#457fd1', '#927256', '#457fd1', '#927256', '#457fd1', '#927256', '#457fd1', '#927256', '#457fd1', '#927256']
 
   const services = Object.keys(servicesContent)
     .filter(key => !key
