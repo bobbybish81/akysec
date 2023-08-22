@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://reviverepairs.com
+
+# Sitemaps
+Sitemap: https://reviverepairs.com/sitemap.xml

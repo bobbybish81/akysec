@@ -39,7 +39,7 @@ const Home = ({ homeContent } : homeContentProps) => {
         </article>
       </section>
       <section className='about-section'>
-        <h1>About akysec</h1>
+        <h2>About akysec</h2>
         <div className='about-section-div'>
           <article className='about-article'>
             <div className='about-img-div'>
