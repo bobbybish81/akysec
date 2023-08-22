@@ -42,18 +42,18 @@ const Home = ({ homeContent } : homeContentProps) => {
         <h2>About akysec</h2>
         <div className='about-section-div'>
           <article className='about-article'>
-            <div className='about-img-div'>
+            <div className='about-certificate-div'>
               <img
-                  className='about-img'
+                  className='about-certificate-img'
                   src={require('../assets/certifications/PECB_1.webp')} alt='logo to appear'/>
               <img
-                  className='about-img'
+                  className='about-certificate-img'
                   src={require('../assets/certifications/PECB_2.webp')} alt='logo to appear'/>
               <img
-                  className='about-img'
+                  className='about-certificate-img'
                   src={require('../assets/certifications/CCSK.webp')} alt='logo to appear'/>
               <img
-                  className='about-img' style={{margin: '0'}}
+                  className='about-certificate-img'
                   src={require('../assets/certifications/CISM.webp')} alt='logo to appear'/>
             </div>
             {homeContent.About_Akysec?.map((text, index) => 

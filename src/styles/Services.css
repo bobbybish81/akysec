@@ -43,10 +43,7 @@
     border: 1px solid #eae9e9;
     border-radius: 5%;
     box-shadow: rgba(76, 16, 45, 0.16) 0px 3px 6px, rgba(76, 16, 45, 0.23) 0px 3px 6px;
-  }
-
-  .services-article:last-of-type {
-    padding: 1.5rem;
+    overflow: hidden;
   }
 
   .service-icon {

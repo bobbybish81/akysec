@@ -39,17 +39,17 @@ const Services = ({ servicesContent } : servicesContentProps) => {
       .sort();
 
   const servicesText = [
-    servicesContent.CISO_as_a_Service[0].children[0].text,
-    servicesContent.Cloud_security[0].children[0].text,
-    servicesContent.Compliance_and_regulatory_requirements[0].children[0].text,
-    servicesContent.DevSecOps[0].children[0].text,
-    servicesContent.Governance[0].children[0].text,
-    servicesContent.Identity_and_access_management[0].children[0].text,
-    servicesContent.Information_security_management_system[0].children[0].text,
-    servicesContent.Risk_management[0].children[0].text,
-    servicesContent.Security_audits[0].children[0].text,
-    servicesContent.Security_awareness_and_training[0].children[0].text,
-    servicesContent.Third_party_risk_management[0].children[0].text,
+    servicesContent.CISO_as_a_Service?.[0]?.children?.[0]?.text,
+    servicesContent.Cloud_security?.[0]?.children?.[0]?.text,
+    servicesContent.Compliance_and_regulatory_requirements?.[0]?.children?.[0]?.text,
+    servicesContent.DevSecOps?.[0]?.children?.[0]?.text,
+    servicesContent.Governance?.[0]?.children?.[0]?.text,
+    servicesContent.Identity_and_access_management?.[0]?.children?.[0]?.text,
+    servicesContent.Information_security_management_system?.[0]?.children?.[0]?.text,
+    servicesContent.Risk_management?.[0]?.children?.[0]?.text,
+    servicesContent.Security_audits?.[0]?.children?.[0]?.text,
+    servicesContent.Security_awareness_and_training?.[0]?.children?.[0]?.text,
+    servicesContent.Third_party_risk_management?.[0]?.children?.[0]?.text,
   ]
 
   return (
