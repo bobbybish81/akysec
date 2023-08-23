@@ -47,6 +47,8 @@ header {
 .desktop-nav-links li {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -56,9 +58,10 @@ header {
 
 .link-icon {
   display: flex;
-  width: 100%;
+  width: 1.5rem;
   height: 1.5rem;
   padding: 0;
+  margin-right: 0.5rem;
 }
 
 .active-link li {
@@ -110,11 +113,8 @@ header {
   align-items: center;
 }
 
-.link-icon {
-  margin-right: 0.5rem;
-}
-
 @media screen and (min-width: 948px) {
+  
   header {
     height: 6rem;
     padding: 0.85rem 4rem;
@@ -138,6 +138,10 @@ header {
     width: 15rem;
     left: 1.75rem;
     top: 0.25rem;
+  }
+
+  .link-icon {
+    margin-right: 0;
   }
 
 }
