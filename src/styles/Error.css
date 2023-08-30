@@ -2,11 +2,10 @@
   display: block;
   height: 100vh;
   min-width: 350px;
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(23,58,69,1) 35%, rgba(44,115,134,1) 100%);
+  background-color: #fff;
   margin: 0;
   border: 1px solid #fff;
-  color: #fff;
+  color: #4C102D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,14 +30,14 @@
 
 .error-link {
   margin: 0 auto;
-  color: #fff;
+  color: #4C102D;
   font-size: 1.1rem;
   text-decoration: underline;
   text-align: center;
 }
 
 .error-link:hover {
-  color: #4C102D;
+  color: #927256;
   cursor: pointer;
 }
 
