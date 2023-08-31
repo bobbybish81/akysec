@@ -10,8 +10,8 @@ header {
 }
 
 .header-logo {
-  height: 2.75rem;
-  width: 9.75rem
+  height: 2rem;
+  width: 7rem
 }
 
 .location {
@@ -21,7 +21,7 @@ header {
 }
 
 .globe-icon {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: #4C102D;
   cursor: pointer;
 }
@@ -80,7 +80,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: #4C102D;
 }
 
@@ -111,6 +111,23 @@ header {
   margin: 1rem;
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 300px) {
+
+  .header-logo {
+    height: 2.75rem;
+    width: 9.75rem
+  }
+
+  .menu-closebtn,
+  .menu-openbtn {
+    font-size: 2.25rem;
+  }
+
+  .globe-icon {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 948px) {
