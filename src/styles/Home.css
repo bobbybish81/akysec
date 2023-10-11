@@ -195,6 +195,14 @@
 
 }
 
+@media screen and (min-width: 1600px) {
+
+  .intro-section {
+    height: 80vh;
+  }
+
+}
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }

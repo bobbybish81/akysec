@@ -23,7 +23,6 @@ const Footer = () => {
           </a>
         </p>
       </div>
-      {/* <a className='mobile-tel' href='tel:+46736411700'><BsTelephoneFill className='tel-icon'/>073-641 17 00</a> */}
     </footer>
   )
 }
